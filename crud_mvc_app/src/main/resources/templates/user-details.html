@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Details</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>User Details</h2>
+        <ul class="list-group">
+            <li class="list-group-item"><b>ID:</b> <span th:text="${user.id}"></span></li>
+            <li class="list-group-item"><b>Email:</b> <span th:text="${user.email}"></span></li>
+            <li class="list-group-item"><b>Password:</b> <span th:text="${user.password}"></span></li>
+            <li class="list-group-item"><b>First Name:</b> <span th:text="${user.firstName}"></span></li>
+            <li class="list-group-item"><b>Last Name:</b> <span th:text="${user.lastName}"></span></li>
+        </ul>
+        <a class="btn btn-primary" href="/users">Back to User List</a>
+    </div>
+
+    <!-- Bootstrap JS (optional, for Bootstrap features like modal dialogs) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
